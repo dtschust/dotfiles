@@ -1,0 +1,12 @@
+syntax enable
+set background=dark
+set tags=tags;
+set incsearch
+set showcmd
+set ignorecase
+set smartcase
+set t_Co=256
+set ruler
+set hlsearch
+syntax on
+set tabpagemax=30
