@@ -2,14 +2,15 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/drew/.oh-my-zsh
+export ZSH=/Users/dtschust/.oh-my-zsh
+export DEFAULT_USER=dtschust
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="cobalt2"
-ZSH_THEME="agnoster"
-# ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+# ZSH_THEME="agnoster"
+ZSH_THEME="kafeitu"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -70,12 +71,13 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -85,9 +87,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export GOPATH="$HOME/go"
 alias vim="vim -p"
 alias ls="ls -G"
-alias code="cd ~/wrk"
-alias godark="echo -e '\033]50;SetProfile=Dark\a'"
-alias golight="echo -e '\033]50;SetProfile=Light\a'"
+alias code="cd ~/wrk/webapp"
 alias gitl="git log --pretty=oneline | head"
+function anybar { echo -n $1 | nc -4u -w0 localhost ${2:-1738}; }
+alias o="open -a"
+export TERM=xterm-256color
