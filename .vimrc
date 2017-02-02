@@ -8,5 +8,6 @@ set smartcase
 set t_Co=256
 set ruler
 set hlsearch
+set tabstop=2
 syntax on
 set tabpagemax=30
