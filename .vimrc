@@ -10,4 +10,4 @@ set ruler
 set hlsearch
 set tabstop=2
 syntax on
-set tabpagemax=30
+set tabpagemax=100
