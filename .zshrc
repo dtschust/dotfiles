@@ -91,9 +91,11 @@ export EDITOR='vim'
 export GOPATH="$HOME/go"
 alias vim="vim -p"
 alias ls="ls -G"
+alias gs="git status"
+alias gitsearch="git log --oneline -S"
 alias code="cd ~/wrk/webapp"
 alias gitl="git log --pretty=oneline | head"
-alias gs="git status"
 function anybar { echo -n $1 | nc -4u -w0 localhost ${2:-1738}; }
 alias o="open -a"
+alias tickle='git status -s | cut -c4- | xargs touch'
 export TERM=xterm-256color
