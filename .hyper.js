@@ -91,7 +91,6 @@ module.exports = {
 
     summon: {
       hideOnBlur: false,
-      hideDock: true,
     }
   },
 
