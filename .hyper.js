@@ -87,6 +87,11 @@ module.exports = {
 
     hyperStatusLine: {
       footerTransparent: false
+    },
+
+    summon: {
+      hideOnBlur: false,
+      hideDock: true,
     }
   },
 
