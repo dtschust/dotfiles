@@ -89,6 +89,7 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export GOPATH="$HOME/go"
+alias result="echo $?"
 alias vim="vim -p"
 alias ls="ls -G"
 alias gs="git status"
