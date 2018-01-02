@@ -1,3 +1,4 @@
+alias result="echo $?"
 alias vim="vim -p"
 alias ls="ls -G"
 alias code="cd ~/wrk"
