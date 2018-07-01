@@ -101,12 +101,11 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    /*'hyper-solarized-dark',*/
     'hyperterm-atom-dark',
     'hypercwd',
     'hyperterm-summon',
-//    'hyper-statusline',
-    'hyperterm-tab-icons'
+    'hyper-spotify',
+    'hyper-tab-icons'
   ],
 
   // in development, you can create a directory under
