@@ -101,4 +101,6 @@ alias gitl="git log --pretty=oneline | head"
 function anybar { echo -n $1 | nc -4u -w0 localhost ${2:-1738}; }
 alias o="open -a"
 alias tickle='git status -s | cut -c4- | xargs touch'
+alias cat="bat"
 export TERM=xterm-256color
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
