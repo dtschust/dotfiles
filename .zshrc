@@ -4,6 +4,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/dtschust/.oh-my-zsh
 export DEFAULT_USER=dtschust
+REPORTTIME=7
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -40,7 +41,7 @@ ZSH_THEME="kafeitu"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -88,6 +89,11 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+function git_prompt_info() {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+  echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX$fg[blue]%})"
+}
+
 export GOPATH="$HOME/go"
 alias result="echo $?"
 alias vim="vim -p"
@@ -97,10 +103,20 @@ alias gdw="gd -w"
 alias gfo="git fetch origin"
 alias gitsearch="git log --oneline -S"
 alias code="cd ~/wrk/webapp"
+alias godark="echo -e '\033]50;SetProfile=Dark\a'"
+alias golight="echo -e '\033]50;SetProfile=Light\a'"
 alias gitl="git log --pretty=oneline | head"
 function anybar { echo -n $1 | nc -4u -w0 localhost ${2:-1738}; }
 alias o="open -a"
 alias tickle='git status -s | cut -c4- | xargs touch'
 alias cat="bat"
 export TERM=xterm-256color
+
+# printf -- $'\033]6;1;bg;red;brightness;40\a\033]6;1;bg;green;brightness;44\a\033]6;1;bg;blue;brightness;51\a'
+export PATH="/usr/local/sbin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
