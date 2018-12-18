@@ -40,3 +40,4 @@ $(brew --prefix)/opt/fzf/install
 * remap caps lock to escape, hopefully in preferences but maybe using seil (from the people who make karibiner)
 * https://github.com/so-fancy/diff-so-fancy/blob/master/readme.md
 * Install settings sync plugin for VS Code
+* https://www.makeuseof.com/tag/how-to-keep-safari-open-even-after-closing-the-last-tab/
