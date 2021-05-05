@@ -91,7 +91,7 @@ export EDITOR='vim'
 
 function git_prompt_info() {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-  echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX$fg[blue]%})"
+  echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX%{$fg[blue]%})"
 }
 
 export GOPATH="$HOME/go"
@@ -101,12 +101,13 @@ alias ls="ls -G"
 alias gs="git status"
 alias gdw="gd -w"
 alias gfo="git fetch origin"
+alias gtfo="git fetch origin master"
 alias gitsearch="git log --oneline -S"
 alias code="cd ~/wrk/webapp"
+alias vs="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
 alias godark="echo -e '\033]50;SetProfile=Dark\a'"
 alias golight="echo -e '\033]50;SetProfile=Light\a'"
 alias gitl="git log --pretty=oneline | head"
-function anybar { echo -n $1 | nc -4u -w0 localhost ${2:-1738}; }
 alias o="open -a"
 alias tickle='git status -s | cut -c4- | xargs touch'
 alias cat="bat"
