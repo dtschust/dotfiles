@@ -1525,6 +1525,19 @@
 			<integer>1</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
+			<key>Triggers</key>
+			<array>
+				<dict>
+					<key>action</key>
+					<string>iTermUserNotificationTrigger</string>
+					<key>parameter</key>
+					<string>Duo auth required</string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>Enter a passcode or select one of the following options</string>
+				</dict>
+			</array>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -2846,8 +2859,6 @@
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
-	<key>PreventEscapeSequenceFromClearingHistory</key>
-	<false/>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
