@@ -110,6 +110,7 @@ alias golight="echo -e '\033]50;SetProfile=Light\a'"
 alias gitl="git log --pretty=oneline | head"
 alias o="open -a"
 alias tickle='git status -s | cut -c4- | xargs touch'
+alias add250ChangedFilesToGit="gs -s | head -n 250 | awk '{print $2}' | xargs git add"
 alias cat="bat"
 export TERM=xterm-256color
 
