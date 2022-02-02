@@ -32,6 +32,7 @@
 * Some other settings that I don't know if they are covered above https://robservatory.com/speed-up-your-mac-via-hidden-prefs/
 * `brew install bat`
 * `brew install tldr`
+* `brew install fx`
 ```
 brew install fzf
 # To install useful key bindings and fuzzy completion:
