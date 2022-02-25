@@ -30,6 +30,7 @@
 * OS X Hacker mode gist - https://gist.github.com/brandonb927/3195465
 * blazingly fast keyboard repeat rate - https://github.com/mathiasbynens/dotfiles/issues/687
 * Some other settings that I don't know if they are covered above https://robservatory.com/speed-up-your-mac-via-hidden-prefs/
+* `defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false`
 * `brew install bat`
 * `brew install tldr`
 * `brew install fx`
