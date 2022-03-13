@@ -38,6 +38,7 @@ $(brew --prefix)/opt/fzf/install
 * https://github.com/so-fancy/diff-so-fancy/blob/master/readme.md
 * Sync VS Code settings using my github account
 * Whatever adblocker settings I have these days: Right now it's ublock origin in chrome, 1blocker in safari, Vinegar and Tweaks for Twitter as well (with the hovercard option turned off)
+* turn off spotlight indexing, replace shortcut with launchbar
 
 # Settings to copy from old machine
 * Copy mouse sensitivity settings from preferences
