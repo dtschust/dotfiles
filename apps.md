@@ -1,5 +1,5 @@
 # Cask install
-`brew cask install google-chrome vivaldi flux iterm2 visual-studio-code caffeine spotify licecap dropbox notion slack bartender omnifocus fantastical monitorcontrol bettertouchtool dash launchbar daisydisk 1password discord`
+`brew cask install google-chrome vivaldi flux iterm2 visual-studio-code caffeine spotify licecap dropbox notion slack bartender omnifocus fantastical monitorcontrol bettertouchtool dash launchbar daisydisk 1password discord logitech-options`
 
 
 # Email Licenses:
@@ -27,7 +27,7 @@
 * blazingly fast keyboard repeat rate - https://github.com/mathiasbynens/dotfiles/issues/687
 * Some other settings that I don't know if they are covered above https://robservatory.com/speed-up-your-mac-via-hidden-prefs/
 * `defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false`
-* `brew install zsh bat tldr fx diff-so-fancy fzf`
+* `brew install zsh bat tldr fx diff-so-fancy fzf node npm yarn`
 
 ```
 # To install useful key bindings and fuzzy completion:
@@ -39,9 +39,11 @@ $(brew --prefix)/opt/fzf/install
 * Sync VS Code settings using my github account
 * Whatever adblocker settings I have these days: Right now it's ublock origin in chrome, 1blocker in safari, Vinegar and Tweaks for Twitter as well (with the hovercard option turned off)
 * turn off spotlight indexing, replace shortcut with launchbar
+* copy .env files from repos like `drews-little-helpers`
 
 # Settings to copy from old machine
-* Copy mouse sensitivity settings from preferences
+
+* Copy logitech options thing
 * bettertouchtool
 * divvy
 * iterm2
