@@ -1,30 +1,23 @@
-* Dropbox
-* Slack
-* hyper.is
-* VS Code
-* Bartender
-* Flux
-* Caffeine
-* Brew
-* Spotify
-* Licecap
-* XScope
-* Solarized Color Schemes
-* Postman.app
+# Cask install
+`brew cask install google-chrome vivaldi flux iterm2 visual-studio-code caffeine spotify licecap dropbox notion slack bartender omnifocus fantastical monitorcontrol bettertouchtool dash launchbar daisydisk 1password`
+
 
 # Email Licenses:
 * Dash
 * BetterTouchTool
+* OmniFocus
+* DaisyDisk
+* Launchbar
 
 # From Mac App Store:
-* GIPHY Capture. The GIF Maker
 * iA Writer
 * Reeder 3
 * White Noise
-* 1Password
 * Tweetbot
 * Soulver
 * Divvy
+* Screens
+* (Check app store for others)
 
 # TODO:
 * OS X Hacker mode gist - https://gist.github.com/brandonb927/3195465
@@ -40,7 +33,13 @@ brew install fzf
 $(brew --prefix)/opt/fzf/install
 ```
 
-* remap caps lock to escape, hopefully in preferences but maybe using seil (from the people who make karibiner)
+* remap caps lock to escape, in preferences
 * https://github.com/so-fancy/diff-so-fancy/blob/master/readme.md
-* Install settings sync plugin for VS Code
-* https://www.makeuseof.com/tag/how-to-keep-safari-open-even-after-closing-the-last-tab/
+* Sync VS Code settings using my github account
+
+# Settings to copy from old machine
+* Copy mouse sensitivity settings from preferences
+* bettertouchtool
+* divvy
+* iterm2
+* omnifocus (perspectives in sidebar, vim mode)
