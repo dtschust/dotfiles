@@ -1,5 +1,5 @@
 # Cask install
-`brew cask install google-chrome vivaldi flux iterm2 visual-studio-code caffeine spotify licecap dropbox notion slack bartender omnifocus fantastical monitorcontrol bettertouchtool dash launchbar daisydisk 1password`
+`brew cask install google-chrome vivaldi flux iterm2 visual-studio-code caffeine spotify licecap dropbox notion slack bartender omnifocus fantastical monitorcontrol bettertouchtool dash launchbar daisydisk 1password discord`
 
 
 # Email Licenses:
@@ -20,15 +20,14 @@
 * (Check app store for others)
 
 # TODO:
+* https://ohmyz.sh/
 * OS X Hacker mode gist - https://gist.github.com/brandonb927/3195465
 * blazingly fast keyboard repeat rate - https://github.com/mathiasbynens/dotfiles/issues/687
 * Some other settings that I don't know if they are covered above https://robservatory.com/speed-up-your-mac-via-hidden-prefs/
 * `defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false`
-* `brew install bat`
-* `brew install tldr`
-* `brew install fx`
+* `brew install zsh bat tldr fx diff-so-fancy fzf`
+
 ```
-brew install fzf
 # To install useful key bindings and fuzzy completion:
 $(brew --prefix)/opt/fzf/install
 ```
