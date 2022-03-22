@@ -28,6 +28,9 @@
 * Some other settings that I don't know if they are covered above https://robservatory.com/speed-up-your-mac-via-hidden-prefs/
 * `defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false`
 * `brew install zsh bat tldr fx diff-so-fancy fzf node npm yarn`
+* `cp ./com.mizage.Divvy.plist ~/Library/Preferences/com.mizage.Divvy.plist`
+* `open ./Default.bttpreset`
+* `cp ./iterm2/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist`
 
 ```
 # To install useful key bindings and fuzzy completion:
