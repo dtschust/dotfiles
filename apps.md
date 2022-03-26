@@ -1,5 +1,5 @@
 # Cask install
-`brew cask install google-chrome vivaldi flux iterm2 visual-studio-code caffeine spotify licecap dropbox notion slack bartender omnifocus fantastical monitorcontrol bettertouchtool dash launchbar daisydisk 1password discord logitech-options`
+`brew install --cask google-chrome vivaldi flux iterm2 visual-studio-code caffeine spotify licecap dropbox notion slack bartender omnifocus fantastical monitorcontrol bettertouchtool dash launchbar daisydisk 1password discord logitech-options`
 
 
 # Email Licenses:
