@@ -1,5 +1,19 @@
+# TODO:
+* Install brew
+* https://ohmyz.sh/
+* `cp ./com.mizage.Divvy.plist ~/Library/Preferences/com.mizage.Divvy.plist`, then restart computer
+* `open ./Default.bttpreset`
+* `cp ./iterm2/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist`
+
+```
+# To install useful key bindings and fuzzy completion:
+$(brew --prefix)/opt/fzf/install
+```
+
 # Cask install
+`brew tap homebrew/cask-drivers` (to add logitech-options)
 `brew install --cask google-chrome vivaldi flux iterm2 visual-studio-code caffeine spotify licecap dropbox notion slack bartender omnifocus fantastical monitorcontrol bettertouchtool dash launchbar daisydisk 1password discord logitech-options`
+`brew install zsh bat tldr fx diff-so-fancy fzf node npm yarn`
 
 
 # Email Licenses:
@@ -10,33 +24,17 @@
 * Launchbar
 
 # From Mac App Store:
+* Divvy
+* Screens
 * iA Writer
-* Reeder 3
+* Reeder
 * White Noise
 * Tweetbot
 * Soulver
-* Divvy
-* Screens
-* Pixelmator
-* IA Writer
+* Pixelmator Classic
 * (Check app store for others)
 
-# TODO:
-* https://ohmyz.sh/
-* OS X Hacker mode gist - https://gist.github.com/brandonb927/3195465
-* blazingly fast keyboard repeat rate - https://github.com/mathiasbynens/dotfiles/issues/687
-* Some other settings that I don't know if they are covered above https://robservatory.com/speed-up-your-mac-via-hidden-prefs/
-* `defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false`
-* `brew install zsh bat tldr fx diff-so-fancy fzf node npm yarn`
-* `cp ./com.mizage.Divvy.plist ~/Library/Preferences/com.mizage.Divvy.plist`
-* `open ./Default.bttpreset`
-* `cp ./iterm2/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist`
-
-```
-# To install useful key bindings and fuzzy completion:
-$(brew --prefix)/opt/fzf/install
-```
-
+# TODO
 * remap caps lock to escape, in preferences
 * https://github.com/so-fancy/diff-so-fancy/blob/master/readme.md
 * Sync VS Code settings using my github account
@@ -46,8 +44,5 @@ $(brew --prefix)/opt/fzf/install
 
 # Settings to copy from old machine
 
-* Copy logitech options thing
-* bettertouchtool
-* divvy
-* iterm2
-* omnifocus (perspectives in sidebar, vim mode)
+* Copy logitech options option
+* omnifocus (perspectives in sidebar, vim mode, fluid layout)
