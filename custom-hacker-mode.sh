@@ -246,6 +246,11 @@ defaults write NSGlobalDomain NSWindowResizeTime .001
 defaults write com.apple.finder DisableAllAnimations -bool true
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 
+# Don't close safari when only pinned tabs remain
+# https://apple.stackexchange.com/a/260916
+defaults write com.apple.Safari NSUserKeyEquivalents -dict-add 'Close Tab' '<string>@w</string></dict>'
+defaults write com.apple.universalaccess com.apple.custommenu.apps -array-add '<string>com.apple.Safari</string>'
+
 
 ###############################################################################
 # Kill affected applications
