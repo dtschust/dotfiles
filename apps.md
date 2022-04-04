@@ -4,6 +4,7 @@
 * `cp ./com.mizage.Divvy.plist ~/Library/Preferences/com.mizage.Divvy.plist`, then restart computer
 * `open ./Default.bttpreset`
 * `cp ./iterm2/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist`
+* `cp ./karabiner.json ~/.config/karabiner/karabiner.json'
 
 ```
 # To install useful key bindings and fuzzy completion:
