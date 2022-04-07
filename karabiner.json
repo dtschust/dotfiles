@@ -102,21 +102,21 @@
                     "simple_modifications": [
                         {
                             "from": {
-                                "key_code": "left_option"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "left_command"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
                                 "key_code": "left_command"
                             },
                             "to": [
                                 {
                                     "key_code": "left_option"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_option"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "left_command"
                                 }
                             ]
                         },
@@ -327,6 +327,27 @@
                 },
                 {
                     "from": {
+                        "key_code": "h",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_command",
+                                "left_control",
+                                "left_option"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "h",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "from": {
                         "key_code": "i",
                         "modifiers": {
                             "mandatory": [
@@ -477,7 +498,7 @@
                     },
                     "to": [
                         {
-                            "shell_command": "open -a 'Zoom'"
+                            "shell_command": "open -a 'zoom.us'"
                         }
                     ]
                 }
