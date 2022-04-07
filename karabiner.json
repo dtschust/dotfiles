@@ -327,7 +327,7 @@
                 },
                 {
                     "from": {
-                        "key_code": "h",
+                        "key_code": "j",
                         "modifiers": {
                             "mandatory": [
                                 "left_shift",
