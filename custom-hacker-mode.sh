@@ -251,6 +251,8 @@ defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 defaults write com.apple.Safari NSUserKeyEquivalents -dict-add 'Close Tab' '<string>@w</string></dict>'
 defaults write com.apple.universalaccess com.apple.custommenu.apps -array-add '<string>com.apple.Safari</string>'
 
+# Make screenshots work normally
+defaults write com.apple.screencapture show-thumbnail -bool FALSE
 
 ###############################################################################
 # Kill affected applications
