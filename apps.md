@@ -23,6 +23,7 @@ $(brew --prefix)/opt/fzf/install
 * OmniFocus
 * DaisyDisk
 * Launchbar
+* Bartender
 
 # From Mac App Store:
 * Divvy
