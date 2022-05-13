@@ -13,7 +13,7 @@ $(brew --prefix)/opt/fzf/install
 
 # Cask install
 * `brew tap homebrew/cask-drivers` (to add logitech-options)
-* `brew install --cask google-chrome vivaldi flux iterm2 visual-studio-code caffeine spotify licecap dropbox notion slack bartender omnifocus fantastical monitorcontrol bettertouchtool dash launchbar daisydisk 1password discord logitech-options`
+* `brew install --cask google-chrome vivaldi flux iterm2 visual-studio-code caffeine spotify licecap dropbox notion slack bartender omnifocus fantastical monitorcontrol bettertouchtool dash launchbar daisydisk 1password discord logitech-options karabiner-elements`
 * `brew install zsh bat tldr fx diff-so-fancy fzf node npm yarn`
 
 
