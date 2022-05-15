@@ -257,6 +257,9 @@ defaults write com.apple.screencapture show-thumbnail -bool FALSE
 # Disable "Close windows when quitting an app" in System Preferences -> General
 defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
 
+# Dock magnification enabled
+defaults write com.apple.dock magnification -bool true
+
 ###############################################################################
 # Kill affected applications
 ###############################################################################
