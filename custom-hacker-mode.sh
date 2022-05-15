@@ -254,6 +254,9 @@ defaults write com.apple.universalaccess com.apple.custommenu.apps -array-add '<
 # Make screenshots work normally
 defaults write com.apple.screencapture show-thumbnail -bool FALSE
 
+# Disable "Close windows when quitting an app" in System Preferences -> General
+defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
+
 ###############################################################################
 # Kill affected applications
 ###############################################################################
