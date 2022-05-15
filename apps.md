@@ -13,8 +13,9 @@ $(brew --prefix)/opt/fzf/install
 
 # Cask install
 * `brew tap homebrew/cask-drivers` (to add logitech-options)
-* `brew install --cask google-chrome vivaldi flux iterm2 visual-studio-code caffeine spotify licecap dropbox notion slack bartender omnifocus fantastical monitorcontrol bettertouchtool dash launchbar daisydisk 1password discord logitech-options karabiner-elements`
-* `brew install zsh bat tldr fx diff-so-fancy fzf node npm yarn`
+* `brew install --cask google-chrome vivaldi flux iterm2 visual-studio-code caffeine spotify licecap dropbox notion slack bartender omnifocus fantastical monitorcontrol bettertouchtool dash launchbar daisydisk 1password discord logitech-options karabiner-elements backblaze keycastr`
+* `/opt/homebrew/Caskroom/backblaze/8.0.1.592/Backblaze Installer.app`
+* `brew install zsh bat tldr fx diff-so-fancy fzf node npm yarn devutils`
 
 
 # Email Licenses:
@@ -37,12 +38,18 @@ $(brew --prefix)/opt/fzf/install
 * (Check app store for others)
 
 # TODO
-* remap caps lock to escape, in preferences
 * https://github.com/so-fancy/diff-so-fancy/blob/master/readme.md
 * Sync VS Code settings using my github account
 * Whatever adblocker settings I have these days: Right now it's ublock origin in chrome, 1blocker in safari, Vinegar and Tweaks for Twitter as well (with the hovercard option turned off)
 * turn off spotlight indexing, replace shortcut with launchbar
 * copy .env files from repos like `drews-little-helpers`
+* install super duper
+* System Preferences -> Accessibility -> Use scroll gesture with modifier keys to zoom: (Control)
+* omnifocus archive from `~/Library/Containers/com.omnigroup.OmniFocus3/Data/Library/Application Support/OmniFocus/`
+* set up super duper and backblaze
+* bettertouchtool shortcut to quit zoom is mapped to a script in my downloads folder.
+* Update all bettertouch tool things, they have hardcoded paths for PATH as well as files in the home directory.
+
 
 # Settings to copy from old machine
 
