@@ -260,6 +260,9 @@ defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
 # Dock magnification enabled
 defaults write com.apple.dock magnification -bool true
 
+# Reduce transparency
+defaults write com.apple.universalaccess reduceTransparency 1
+
 ###############################################################################
 # Kill affected applications
 ###############################################################################
