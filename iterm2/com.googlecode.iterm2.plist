@@ -6,6 +6,8 @@
 	<true/>
 	<key>AboutToPasteTabsWithCancel_selection</key>
 	<integer>0</integer>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>AppleFontSmoothing</key>
 	<integer>0</integer>
 	<key>Custom Color Presets</key>
