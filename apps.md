@@ -12,8 +12,7 @@ $(brew --prefix)/opt/fzf/install
 ```
 
 # Cask install
-* `brew tap homebrew/cask-drivers` (to add logitech-options)
-* `brew install --cask google-chrome vivaldi flux iterm2 visual-studio-code caffeine spotify licecap dropbox notion slack bartender omnifocus fantastical monitorcontrol bettertouchtool dash launchbar daisydisk 1password discord logitech-options karabiner-elements backblaze keycastr`
+* `brew install --cask google-chrome vivaldi flux iterm2 visual-studio-code caffeine spotify licecap dropbox notion slack bartender omnifocus fantastical monitorcontrol bettertouchtool dash launchbar daisydisk 1password discord karabiner-elements backblaze keycastr`
 * `/opt/homebrew/Caskroom/backblaze/8.0.1.592/Backblaze Installer.app`
 * `brew install zsh bat tldr fx diff-so-fancy fzf node npm yarn devutils`
 
@@ -53,5 +52,4 @@ $(brew --prefix)/opt/fzf/install
 
 # Settings to copy from old machine
 
-* Copy logitech options option
 * omnifocus (perspectives in sidebar, vim mode, fluid layout)
