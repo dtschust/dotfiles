@@ -48,6 +48,7 @@ $(brew --prefix)/opt/fzf/install
 * set up super duper and backblaze
 * bettertouchtool shortcut to quit zoom is mapped to a script in my downloads folder.
 * Update all bettertouch tool things, they have hardcoded paths for PATH as well as files in the home directory.
+* Fix safari close tab silliness: https://apple.stackexchange.com/questions/209295/stop-safari-window-closing-when-only-pinned-tabs-are-left/214748#214748
 
 
 # Settings to copy from old machine
