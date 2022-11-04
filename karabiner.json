@@ -313,6 +313,24 @@
                 },
                 {
                     "from": {
+                        "key_code": "n",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_command",
+                                "left_control",
+                                "left_option"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a Notion"
+                        }
+                    ]
+                },
+                {
+                    "from": {
                         "key_code": "b",
                         "modifiers": {
                             "mandatory": [
