@@ -263,6 +263,9 @@ defaults write com.apple.dock magnification -bool true
 # Reduce transparency
 defaults write com.apple.universalaccess reduceTransparency 1
 
+# Hidden apps in dock have transparency
+defaults write com.apple.dock showhidden -bool YES
+
 ###############################################################################
 # Kill affected applications
 ###############################################################################
