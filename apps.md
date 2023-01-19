@@ -12,7 +12,7 @@ $(brew --prefix)/opt/fzf/install
 ```
 
 # Cask install
-* `brew install --cask google-chrome vivaldi flux iterm2 visual-studio-code caffeine spotify licecap dropbox notion slack bartender omnifocus fantastical monitorcontrol bettertouchtool dash launchbar daisydisk 1password discord karabiner-elements backblaze keycastr obsidian`
+* `brew install --cask google-chrome flux iterm2 visual-studio-code caffeine spotify licecap dropbox notion slack bartender omnifocus fantastical monitorcontrol bettertouchtool dash launchbar daisydisk 1password discord karabiner-elements backblaze keycastr obsidian`
 * `/opt/homebrew/Caskroom/backblaze/8.0.1.592/Backblaze Installer.app`
 * `brew install zsh bat tldr fx diff-so-fancy fzf node npm yarn devutils`
 
