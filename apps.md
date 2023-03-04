@@ -34,6 +34,8 @@ $(brew --prefix)/opt/fzf/install
 * Tweetbot
 * Soulver
 * Pixelmator Classic
+* [Velja](https://sindresorhus.com/velja)
+	* Use it for zoom, spotify, notion, discord, and custom rule to have localhost open in chrome
 * (Check app store for others)
 
 # TODO
