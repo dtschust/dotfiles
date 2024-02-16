@@ -31,7 +31,7 @@ $(brew --prefix)/opt/fzf/install
 * iA Writer
 * Reeder
 * White Noise
-* Tweetbot
+* Ivory
 * Soulver
 * Pixelmator Classic
 * [Velja](https://sindresorhus.com/velja)
