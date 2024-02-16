@@ -52,12 +52,6 @@ $(brew --prefix)/opt/fzf/install
 * Update all bettertouch tool things, they have hardcoded paths for PATH as well as files in the home directory.
 * if home directory is not "drew", create a symlink
 * set up obsidian vaults
-* Fix safari close tab silliness: https://apple.stackexchange.com/questions/209295/stop-safari-window-closing-when-only-pinned-tabs-are-left/214748#214748
-```
-defaults write com.apple.Safari NSUserKeyEquivalents -dict-add 'Close Tab' '<string>@w</string></dict>'
-defaults write com.apple.universalaccess com.apple.custommenu.apps -array-add '<string>com.apple.Safari</string>'
-```
-
 
 # Settings to copy from old machine
 
