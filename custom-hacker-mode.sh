@@ -265,6 +265,9 @@ defaults write com.apple.universalaccess reduceTransparency 1
 # Hidden apps in dock have transparency
 defaults write com.apple.dock showhidden -bool YES
 
+# Clicking the desktop doesn't show the desktop
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
+
 ###############################################################################
 # Kill affected applications
 ###############################################################################
