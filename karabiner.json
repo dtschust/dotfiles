@@ -276,28 +276,6 @@
             "simple_modifications": [
                 {
                     "from": {
-                        "key_code": "slash",
-                        "modifiers": {
-                            "mandatory": [
-                                "left_shift",
-                                "left_command",
-                                "left_control",
-                                "left_option"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "slash",
-                            "modifiers": [
-                                "left_command",
-                                "left_shift"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "from": {
                         "key_code": "application"
                     },
                     "to": [
@@ -326,6 +304,24 @@
                     "to": [
                         {
                             "shell_command": "open -a Notion"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "d",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_command",
+                                "left_control",
+                                "left_option"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a Dash"
                         }
                     ]
                 },
@@ -367,24 +363,6 @@
                 },
                 {
                     "from": {
-                        "key_code": "i",
-                        "modifiers": {
-                            "mandatory": [
-                                "left_shift",
-                                "left_command",
-                                "left_control",
-                                "left_option"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "shell_command": "open -a 'obsidian'"
-                        }
-                    ]
-                },
-                {
-                    "from": {
                         "key_code": "j",
                         "modifiers": {
                             "mandatory": [
@@ -401,6 +379,24 @@
                             "modifiers": [
                                 "left_command"
                             ]
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "i",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_command",
+                                "left_control",
+                                "left_option"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a Obsidian"
                         }
                     ]
                 },
@@ -437,28 +433,6 @@
                     "to": [
                         {
                             "shell_command": "open -a Omnifocus"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "q",
-                        "modifiers": {
-                            "mandatory": [
-                                "left_shift",
-                                "left_command",
-                                "left_control",
-                                "left_option"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "q",
-                            "modifiers": [
-                                "left_command",
-                                "left_control"
-                            ]
                         }
                     ]
                 },
@@ -561,6 +535,28 @@
                     "to": [
                         {
                             "shell_command": "open -a 'zoom.us'"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "q",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_command",
+                                "left_control",
+                                "left_option"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "q",
+                            "modifiers": [
+                                "left_command",
+                                "left_control"
+                            ]
                         }
                     ]
                 }
