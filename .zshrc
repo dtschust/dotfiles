@@ -97,7 +97,7 @@ function git_prompt_info() {
 export GOPATH="$HOME/go"
 alias result="echo $?"
 alias vim="vim -p"
-alias ls="ls -G"
+alias ls="eza"
 alias gs="git status"
 alias gdw="gd -w"
 alias gfo="git fetch origin"
