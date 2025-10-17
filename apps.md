@@ -56,6 +56,7 @@ $(brew --prefix)/opt/fzf/install
 - Update all bettertouch tool things, they have hardcoded paths for PATH as well as files in the home directory.
 - if home directory is not "drew", create a symlink
 - set up obsidian vaults
+- grab raycast config, it's in my email, a .rayconfig file sent from my work email and password protected with E(E9.
 
 # Settings to copy from old machine
 
