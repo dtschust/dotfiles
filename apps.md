@@ -6,6 +6,7 @@
 - `open ./Default.bttpreset`
 - `cp ./iterm2/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist`
 - `cp ./karabiner.json ~/.config/karabiner/karabiner.json`
+- `cp ./init.lua ~/.hammerspoon/init.lua`
 
 ```
 # To install useful key bindings and fuzzy completion:
@@ -16,7 +17,7 @@ $(brew --prefix)/opt/fzf/install
 
 - `brew install --cask google-chrome arc flux iterm2 visual-studio-code caffeine spotify licecap maestral slack bartender omnifocus monitorcontrol bettertouchtool dash raycast daisydisk 1password discord karabiner-elements backblaze keycastr obsidian`
 - `/opt/homebrew/Caskroom/backblaze/8.0.1.592/Backblaze Installer.app`
-- `brew install zsh bat tldr fx diff-so-fancy fzf node npm yarn devutils eza`
+- `brew install zsh bat tldr fx diff-so-fancy fzf node npm yarn devutils eza hammerspoon`
 
 # Email Licenses:
 
@@ -57,6 +58,7 @@ $(brew --prefix)/opt/fzf/install
 - if home directory is not "drew", create a symlink
 - set up obsidian vaults
 - grab raycast config, it's in my email, a .rayconfig file sent from my work email and password protected with E(E9.
+- get hammerspoon working with accessibility settings etc
 
 # Settings to copy from old machine
 
