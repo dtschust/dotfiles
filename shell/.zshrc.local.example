@@ -1,0 +1,5 @@
+# Copy to ~/.zshrc.local for machine-specific paths, private exports, and
+# local aliases. Keep the real ~/.zshrc.local out of git.
+
+# export WORKSPACE="$HOME/code"
+# alias work='cd "$WORKSPACE"'

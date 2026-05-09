@@ -1,65 +1,33 @@
-# TODO:
+# Mac Setup Notes
 
-- Install brew
-- https://ohmyz.sh/
-- `cp ./com.mizage.Divvy.plist ~/Library/Preferences/com.mizage.Divvy.plist`, then restart computer
-- `open ./Default.bttpreset`
-- `cp ./iterm2/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist`
-- `cp ./karabiner.json ~/.config/karabiner/karabiner.json`
-- `cp ./init.lua ~/.hammerspoon/init.lua`
+## First Run
 
-```
-# To install useful key bindings and fuzzy completion:
-$(brew --prefix)/opt/fzf/install
-```
+- Install Homebrew: <https://brew.sh/>
+- Run `brew bundle` from this repository.
+- Install Oh My Zsh: <https://ohmyz.sh/>
+- Run `$(brew --prefix)/opt/fzf/install` for shell key bindings and completion.
+- Run `./bootstrap.sh --dry-run`, then `./bootstrap.sh --link` or `./bootstrap.sh --copy`.
 
-# Cask install
+## Manual App Imports
 
-- `brew install --cask google-chrome arc flux iterm2 visual-studio-code caffeine spotify licecap maestral slack bartender omnifocus monitorcontrol bettertouchtool dash raycast daisydisk 1password discord karabiner-elements backblaze keycastr obsidian`
-- `/opt/homebrew/Caskroom/backblaze/8.0.1.592/Backblaze Installer.app`
-- `brew install zsh bat tldr fx diff-so-fancy fzf node npm yarn devutils eza hammerspoon`
+- Karabiner-Elements: import `karabiner/karabiner.json`.
+- Hammerspoon: load `hammerspoon/init.lua` and grant Accessibility permissions.
+- iTerm2: import `iterm2/drews-theme.itermcolors`; see `iterm2/README.md`.
+- BetterTouchTool: import `bettertouchtool/Default.bttpreset`; see `bettertouchtool/README.md`.
+- Divvy: copy `divvy/com.mizage.Divvy.plist` to `~/Library/Preferences/` if needed.
+- VS Code or Cursor: copy or merge `vscode/settings.json` and `vscode/keybindings.json`.
 
-# Email Licenses:
+## Manual System Preferences
 
-- Dash
-- BetterTouchTool
-- OmniFocus
-- DaisyDisk
-- Launchbar
-- Bartender
+- Enable Accessibility permissions for Hammerspoon, Karabiner-Elements, BetterTouchTool, Divvy, and window-management tools.
+- Enable scroll gesture zoom with Control as the modifier.
+- Configure browser content blockers manually.
+- Set up backups separately.
+- Set up Obsidian vaults separately.
+- Review `macos/defaults.sh` before running it; it changes global macOS defaults.
 
-# From Mac App Store:
+## Keep Out Of This Repo
 
-- Divvy
-- Screens
-- iA Writer
-- Reeder
-- White Noise
-- Ivory
-- Soulver
-- Pixelmator Classic
-- [Velja](https://sindresorhus.com/velja)
-  - Use it for zoom, spotify, notion, discord, and custom rule to have localhost open in chrome
-- (Check app store for others)
-
-# TODO
-
-- https://github.com/so-fancy/diff-so-fancy/blob/master/readme.md
-- Sync VS Code settings using my github account
-- Whatever adblocker settings I have these days: Right now it's ublock origin in chrome, 1blocker in safari, Vinegar and Tweaks for Twitter as well (with the hovercard option turned off)
-- turn off spotlight indexing, replace shortcut with launchbar or raycast
-- copy .env files from repos like `drews-little-helpers`
-- install super duper
-- System Preferences -> Accessibility -> Use scroll gesture with modifier keys to zoom: (Control)
-- omnifocus archive from `~/Library/Containers/com.omnigroup.OmniFocus3/Data/Library/Application Support/OmniFocus/`, directory has probably changed for omnifocus 4
-- set up super duper and backblaze
-- bettertouchtool shortcut to quit zoom is mapped to a script in my downloads folder.
-- Update all bettertouch tool things, they have hardcoded paths for PATH as well as files in the home directory.
-- if home directory is not "drew", create a symlink
-- set up obsidian vaults
-- grab raycast config, it's in my email, a .rayconfig file sent from my work email and password protected with E(E9.
-- get hammerspoon working with accessibility settings etc
-
-# Settings to copy from old machine
-
-- omnifocus (perspectives in sidebar, vim mode, fluid layout)
+- Credentials, certificates, package-manager auth, app auth databases, private host files, and machine-specific work setup.
+- Generated shell history, editor history, app logs, and local cache files.
+- Whole-app preference exports that contain account state, local paths, or opaque binary data. Prefer small sanitized exports plus notes.

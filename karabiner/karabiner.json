@@ -1,353 +1,308 @@
 {
-    "profiles": [
-        {
-            "complex_modifications": {
-                "parameters": { "basic.to_if_held_down_threshold_milliseconds": 0 },
-                "rules": [
-                    {
-                        "enabled": true,
-                        "manipulators": [
-                            {
-                                "description": "Change caps_lock to command+control+option+shift.",
-                                "from": {
-                                    "key_code": "caps_lock",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to_if_alone": [{ "key_code": "escape" }],
-                                "to_if_held_down": [
-                                    {
-                                        "key_code": "left_shift",
-                                        "modifiers": ["left_command", "left_control", "left_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "enabled": true,
-                        "manipulators": [
-                            {
-                                "description": "hyper space to control b for tmux",
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": { "mandatory": ["left_shift", "left_command", "left_control", "left_option"] }
-                                },
-                                "to": [{
-                                    "key_code": "b",
-                                    "modifiers": ["left_control"]
-                                }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Change s to Slack",
-                                "from": {
-                                    "key_code": "s",
-                                    "modifiers": { "mandatory": ["left_shift", "left_command", "left_control", "left_option"] }
-                                },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Slack\")'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Change t to Omnifocus",
-                                "from": {
-                                    "key_code": "t",
-                                    "modifiers": { "mandatory": ["left_shift", "left_command", "left_control", "left_option"] }
-                                },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Omnifocus\")'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Change v to Cursor",
-                                "from": {
-                                    "key_code": "v",
-                                    "modifiers": { "mandatory": ["left_shift", "left_command", "left_control", "left_option"] }
-                                },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Cursor\")'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Change x to ChatGPT Atlas (Beta)",
-                                "from": {
-                                    "key_code": "x",
-                                    "modifiers": { "mandatory": ["left_shift", "left_command", "left_control", "left_option"] }
-                                },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"ChatGPT Atlas (Beta)\")'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Change z to Chromium",
-                                "from": {
-                                    "key_code": "z",
-                                    "modifiers": { "mandatory": ["left_shift", "left_command", "left_control", "left_option"] }
-                                },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Chromium\")'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Change b to Safari",
-                                "from": {
-                                    "key_code": "b",
-                                    "modifiers": { "mandatory": ["left_shift", "left_command", "left_control", "left_option"] }
-                                },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Safari\")'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Change c to Google Chrome",
-                                "from": {
-                                    "key_code": "c",
-                                    "modifiers": { "mandatory": ["left_shift", "left_command", "left_control", "left_option"] }
-                                },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Google Chrome\")'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Change d to Dash",
-                                "from": {
-                                    "key_code": "d",
-                                    "modifiers": { "mandatory": ["left_shift", "left_command", "left_control", "left_option"] }
-                                },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Dash\")'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Change f to Figma",
-                                "from": {
-                                    "key_code": "f",
-                                    "modifiers": { "mandatory": ["left_shift", "left_command", "left_control", "left_option"] }
-                                },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Figma\")'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Change i to Obsidian",
-                                "from": {
-                                    "key_code": "i",
-                                    "modifiers": { "mandatory": ["left_shift", "left_command", "left_control", "left_option"] }
-                                },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Obsidian\")'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Change m to Spotify",
-                                "from": {
-                                    "key_code": "m",
-                                    "modifiers": { "mandatory": ["left_shift", "left_command", "left_control", "left_option"] }
-                                },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Spotify\")'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Change n to Notion",
-                                "from": {
-                                    "key_code": "n",
-                                    "modifiers": { "mandatory": ["left_shift", "left_command", "left_control", "left_option"] }
-                                },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Notion\")'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Change o to Omnifocus",
-                                "from": {
-                                    "key_code": "o",
-                                    "modifiers": { "mandatory": ["left_shift", "left_command", "left_control", "left_option"] }
-                                },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Omnifocus\")'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Hyper j to hide",
-                                "from": {
-                                    "key_code": "j",
-                                    "modifiers": { "mandatory": ["left_shift", "left_command", "left_control", "left_option"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "h",
-                                        "modifiers": ["left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "enabled": false,
-                        "manipulators": [
-                            {
-                                "description": "buggy (swallows spaces): Held down spacebar to hyper key",
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to_if_alone": [
-                                    {
-                                        "halt": true,
-                                        "key_code": "spacebar"
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "key_code": "left_shift",
-                                        "modifiers": ["left_command", "left_control", "left_option"]
-                                    }
-                                ],
-                                "type": "basic",
-                                "parameters": {
-                                    "basic.to_delayed_action_delay_milliseconds": 150,
-                                    "basic.to_if_alone_timeout_milliseconds": 100,
-                                    "basic.to_if_held_down_threshold_milliseconds": 150
-                                }
-                            }
-                        ]
-                    }
-                ]
-            },
-            "devices": [
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 50475,
-                        "vendor_id": 1133
-                    },
-                    "ignore": true
+  "profiles": [
+    {
+      "name": "Default profile",
+      "selected": true,
+      "complex_modifications": {
+        "parameters": {
+          "basic.to_if_held_down_threshold_milliseconds": 0
+        },
+        "rules": [
+          {
+            "enabled": true,
+            "manipulators": [
+              {
+                "description": "Change caps_lock to command+control+option+shift.",
+                "from": {
+                  "key_code": "caps_lock",
+                  "modifiers": {
+                    "optional": ["any"]
+                  }
                 },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 34304,
-                        "vendor_id": 1452
-                    },
-                    "ignore": true
+                "to_if_alone": [
+                  {
+                    "key_code": "escape"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_shift",
+                    "modifiers": ["left_command", "left_control", "left_option"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "enabled": true,
+            "manipulators": [
+              {
+                "description": "Hyper space to control-b for tmux.",
+                "from": {
+                  "key_code": "spacebar",
+                  "modifiers": {
+                    "mandatory": ["left_shift", "left_command", "left_control", "left_option"]
+                  }
                 },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 1957,
-                        "vendor_id": 1118
-                    },
-                    "simple_modifications": [
-                        {
-                            "from": { "key_code": "left_command" },
-                            "to": [{ "key_code": "left_option" }]
-                        },
-                        {
-                            "from": { "key_code": "left_option" },
-                            "to": [{ "key_code": "left_command" }]
-                        },
-                        {
-                            "from": { "key_code": "right_option" },
-                            "to": [{ "key_code": "right_command" }]
-                        }
-                    ]
+                "to": [
+                  {
+                    "key_code": "b",
+                    "modifiers": ["left_control"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper-s to Slack.",
+                "from": {
+                  "key_code": "s",
+                  "modifiers": {
+                    "mandatory": ["left_shift", "left_command", "left_control", "left_option"]
+                  }
                 },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 1957,
-                        "vendor_id": 14145
-                    },
-                    "simple_modifications": [
-                        {
-                            "from": { "key_code": "left_command" },
-                            "to": [{ "key_code": "left_option" }]
-                        },
-                        {
-                            "from": { "key_code": "left_option" },
-                            "to": [{ "key_code": "left_command" }]
-                        },
-                        {
-                            "from": { "key_code": "right_option" },
-                            "to": [{ "key_code": "right_command" }]
-                        }
-                    ]
+                "to": [
+                  {
+                    "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Slack\")'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper-t to OmniFocus.",
+                "from": {
+                  "key_code": "t",
+                  "modifiers": {
+                    "mandatory": ["left_shift", "left_command", "left_control", "left_option"]
+                  }
                 },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": true,
-                        "product_id": 4097,
-                        "vendor_id": 10730
-                    },
-                    "ignore": false,
-                    "simple_modifications": [
-                        {
-                            "from": { "key_code": "left_command" },
-                            "to": [{ "key_code": "left_option" }]
-                        },
-                        {
-                            "from": { "key_code": "left_option" },
-                            "to": [{ "key_code": "left_command" }]
-                        },
-                        {
-                            "from": { "key_code": "right_option" },
-                            "to": [{ "key_code": "right_command" }]
-                        }
-                    ]
+                "to": [
+                  {
+                    "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"OmniFocus\")'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper-v to Cursor.",
+                "from": {
+                  "key_code": "v",
+                  "modifiers": {
+                    "mandatory": ["left_shift", "left_command", "left_control", "left_option"]
+                  }
                 },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 258,
-                        "vendor_id": 10730
-                    },
-                    "simple_modifications": [
-                        {
-                            "from": { "key_code": "left_command" },
-                            "to": [{ "key_code": "left_option" }]
-                        },
-                        {
-                            "from": { "key_code": "left_option" },
-                            "to": [{ "key_code": "left_command" }]
-                        },
-                        {
-                            "from": { "key_code": "print_screen" },
-                            "to": [{ "key_code": "scroll_lock" }]
-                        },
-                        {
-                            "from": { "key_code": "right_option" },
-                            "to": [{ "key_code": "right_command" }]
-                        }
-                    ]
+                "to": [
+                  {
+                    "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Cursor\")'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper-x to Visual Studio Code.",
+                "from": {
+                  "key_code": "x",
+                  "modifiers": {
+                    "mandatory": ["left_shift", "left_command", "left_control", "left_option"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Visual Studio Code\")'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper-z to Chromium.",
+                "from": {
+                  "key_code": "z",
+                  "modifiers": {
+                    "mandatory": ["left_shift", "left_command", "left_control", "left_option"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Chromium\")'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper-b to Safari.",
+                "from": {
+                  "key_code": "b",
+                  "modifiers": {
+                    "mandatory": ["left_shift", "left_command", "left_control", "left_option"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Safari\")'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper-c to Google Chrome.",
+                "from": {
+                  "key_code": "c",
+                  "modifiers": {
+                    "mandatory": ["left_shift", "left_command", "left_control", "left_option"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Google Chrome\")'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper-d to Dash.",
+                "from": {
+                  "key_code": "d",
+                  "modifiers": {
+                    "mandatory": ["left_shift", "left_command", "left_control", "left_option"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Dash\")'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper-f to Figma.",
+                "from": {
+                  "key_code": "f",
+                  "modifiers": {
+                    "mandatory": ["left_shift", "left_command", "left_control", "left_option"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Figma\")'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper-i to Obsidian.",
+                "from": {
+                  "key_code": "i",
+                  "modifiers": {
+                    "mandatory": ["left_shift", "left_command", "left_control", "left_option"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Obsidian\")'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper-m to Spotify.",
+                "from": {
+                  "key_code": "m",
+                  "modifiers": {
+                    "mandatory": ["left_shift", "left_command", "left_control", "left_option"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Spotify\")'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper-n to Notion.",
+                "from": {
+                  "key_code": "n",
+                  "modifiers": {
+                    "mandatory": ["left_shift", "left_command", "left_control", "left_option"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"Notion\")'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper-o to OmniFocus.",
+                "from": {
+                  "key_code": "o",
+                  "modifiers": {
+                    "mandatory": ["left_shift", "left_command", "left_control", "left_option"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "/opt/homebrew/bin/hs -c 'hs.application.launchOrFocus(\"OmniFocus\")'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper-j to hide current app.",
+                "from": {
+                  "key_code": "j",
+                  "modifiers": {
+                    "mandatory": ["left_shift", "left_command", "left_control", "left_option"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "h",
+                    "modifiers": ["left_command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "enabled": false,
+            "manipulators": [
+              {
+                "description": "Disabled: held spacebar to hyper key swallows spaces.",
+                "from": {
+                  "key_code": "spacebar",
+                  "modifiers": {
+                    "optional": ["any"]
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "halt": true,
+                    "key_code": "spacebar"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_shift",
+                    "modifiers": ["left_command", "left_control", "left_option"]
+                  }
+                ],
+                "type": "basic",
+                "parameters": {
+                  "basic.to_delayed_action_delay_milliseconds": 150,
+                  "basic.to_if_alone_timeout_milliseconds": 100,
+                  "basic.to_if_held_down_threshold_milliseconds": 150
                 }
-            ],
-            "name": "Default profile",
-            "selected": true,
-            "simple_modifications": [
-                {
-                    "from": { "key_code": "application" },
-                    "to": [
-                        {
-                            "key_code": "left_shift",
-                            "modifiers": ["left_command", "left_control", "left_option"]
-                        }
-                    ]
-                },
-                {
-                    "from": { "key_code": "right_control" },
-                    "to": [
-                        {
-                            "key_code": "left_shift",
-                            "modifiers": ["left_command", "left_control", "left_option"]
-                        }
-                    ]
-                },
-                {
-                    "from": { "key_code": "right_option" },
-                    "to": [
-                        {
-                            "key_code": "left_shift",
-                            "modifiers": ["left_command", "left_control", "left_option"]
-                        }
-                    ]
-                },
-                {
-                    "from": { "key_code": "disabled_for_more_complex_rule_caps_lock" },
-                    "to": [{ "key_code": "escape" }]
-                }
-            ],
-            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
-        }
-    ]
+              }
+            ]
+          }
+        ]
+      },
+      "virtual_hid_keyboard": {
+        "keyboard_type_v2": "ansi"
+      }
+    }
+  ]
 }

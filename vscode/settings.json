@@ -1,0 +1,80 @@
+{
+  "vim.disableAnnoyingNeovimMessage": true,
+  "files.associations": {
+    "*.txt": "smarty"
+  },
+  "workbench.iconTheme": "vs-seti",
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.editor.enablePreview": false,
+  "workbench.panel.location": "bottom",
+  "editor.fontSize": 14,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [100],
+  "editor.insertSpaces": false,
+  "editor.detectIndentation": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": false,
+  "git.autorefresh": false,
+  "git.autoRepositoryDetection": false,
+  "git.blame.statusBarItem.enabled": false,
+  "typescript.check.npmIsInstalled": false,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.tsserver.maxTsServerMemory": 12000,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.options": {
+    "overrideConfig": {
+      "rules": {
+        "no-debugger": "off",
+        "jest/no-focused-tests": "off"
+      }
+    }
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "[javascript][typescript][typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "never"
+    }
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "extensions.ignoreRecommendations": true,
+  "debug.javascript.debugByLinkOptions": "off",
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.promptForLocalFileProtocolHandling": false,
+  "remote.autoForwardPorts": false,
+  "remote.autoForwardPortsSource": "process",
+  "vim.hlsearch": true,
+  "vim.highlightedyank.enable": true,
+  "vim.normalModeKeyBindings": [],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    {
+      "before": ["g", "R"],
+      "commands": ["references-view.findReferences"]
+    }
+  ],
+  "python.analysis.nodeExecutable": "node",
+  "python.analysis.logLevel": "Information",
+  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3"
+}

@@ -1,6 +1,18 @@
 [user]
   name = Drew Schuster
   email = dtschust@gmail.com
+
 [pager]
   diff = diff-so-fancy | less --tabs=1,5 -RFX
   show = diff-so-fancy | less --tabs=1,5 -RFX
+
+[interactive]
+  diffFilter = diff-so-fancy --patch
+
+[alias]
+  fdiff = !git diff --no-ext-diff | diff-so-fancy
+  difff = !git diff --no-ext-diff
+  difftastic = !git -c diff.external=difft diff
+  dt = !git -c diff.external=difft diff
+  showtastic = -c diff.external=difft show --ext-diff
+  st = -c diff.external=difft show --ext-diff
